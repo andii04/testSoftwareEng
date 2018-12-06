@@ -24,7 +24,7 @@ public class BoardingControl implements IBoardingControl {
     }
     public void notifyGroundOperations(BoardingControlReceipt boardingControlReceipt)
     {
-
+        GroundOperationsCenter.receive(boardingControlReceipt);
     }
 
 

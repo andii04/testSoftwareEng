@@ -12,6 +12,12 @@ public class PushBackVehicle implements IPushBackVehicle{
     private boolean isFlashingLightOn;
     private boolean isSteeringPinSet;
 
+    public PushBackVehicle(String uuid, String id, String type) {
+        this.uuid = uuid;
+        this.id = id;
+        this.type = type;
+    }
+
     public void connect(Airplane airplane) {
         isAirplaneConnected = true;
     }
@@ -41,7 +47,7 @@ public class PushBackVehicle implements IPushBackVehicle{
     }
 
     public void stop() {
-
+        speedInMPH = 0;
     }
 
     public void up() {
@@ -69,7 +75,7 @@ public class PushBackVehicle implements IPushBackVehicle{
     }
 
     public void notifyGroundOperations(PushBackVehicleReceipt pushBackVehicleReceipt) {
-
+        GroundOperationsCenter.receive(pushBackVehicleReceipt);
     }
 
 
