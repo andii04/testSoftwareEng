@@ -1,7 +1,3 @@
-package boarding_control;
-
-import boarding_control.BoardingControlReceipt;
-
 public interface IBoardingControl {
 
     public boolean inspect(Passport passport);

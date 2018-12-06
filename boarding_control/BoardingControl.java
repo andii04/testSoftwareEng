@@ -1,8 +1,7 @@
-package boarding_control;
 //sfasfasfasfewwterrfffffffffffffffffffffffffffffffffffffffffffffffff
 public class BoardingControl implements IBoardingControl {
 
-    private ReadingDevice;
+    private readingDevic ReadingDevice;
     private BoardingPassList;
     private ISeatManagement;
 
