@@ -1,6 +1,6 @@
 package boarding_control;
 //sfasfasfasf
-safsaffsafsa
+safsaffsafsa//
 public class BoardingControl implements IBoardingControl {
 
     private ReadingDevice;
