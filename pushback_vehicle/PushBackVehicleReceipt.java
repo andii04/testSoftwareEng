@@ -1,5 +1,3 @@
-package pushback_vehicle;
-
 public class PushBackVehicleReceipt {
     private String uuid;
     private String pushBackVehicleID;

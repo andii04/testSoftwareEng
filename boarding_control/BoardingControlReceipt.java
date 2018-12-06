@@ -1,5 +1,3 @@
-package boarding_control;
-
 public class BoardingControlReceipt {
 
     private String uuid;

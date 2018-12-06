@@ -1,5 +1,3 @@
-package pushback_vehicle;
-
 public class PushBackVehicle implements IPushBackVehicle{
 
     private String uuid;
