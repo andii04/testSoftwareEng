@@ -1,4 +1,4 @@
-package boarding_control;
+package pushback_vehicle;
 
 public interface ISeatManagement {
 }
