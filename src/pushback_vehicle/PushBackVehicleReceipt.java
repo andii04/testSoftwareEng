@@ -1,12 +1,14 @@
+package pushback_vehicle;
+
 public class PushBackVehicleReceipt {
     private String uuid;
     private String pushBackVehicleID;
-    private GateID gateID;
+    private Gate gate;
 
-    public PushBackVehicleReceipt(String uuid, String pushBackVehicleID, GateID gateID) {
+    public PushBackVehicleReceipt(String uuid, String pushBackVehicleID, Gate gate) {
         this.uuid = uuid;
         this.pushBackVehicleID = pushBackVehicleID;
-        this.gateID = gateID;
+        this.Gate = gate;
     }
 
     public String getUuid() {
@@ -25,11 +27,11 @@ public class PushBackVehicleReceipt {
         this.pushBackVehicleID = pushBackVehicleID;
     }
 
-    public GateID getGateID() {
-        return gateID;
+    public Gate getGate() {
+        return gate;
     }
 
-    public void setGateID(GateID gateID) {
-        this.gateID = gateID;
+    public void setGate(Gate gate) {
+        this.gate = gate;
     }
 }
