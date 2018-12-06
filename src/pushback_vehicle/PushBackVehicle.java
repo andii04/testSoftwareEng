@@ -12,32 +12,32 @@ public class PushBackVehicle implements IPushBackVehicle{
     private boolean isFlashingLightOn;
     private boolean isSteeringPinSet;
 
-    public void connect(airplane Airplane) {
-
+    public void connect(Airplane airplane) {
+        isAirplaneConnected = true;
     }
 
     public void disconnectAirplane() {
+        isAirplaneConnected = false;
+    }
+
+    public void execute(Airplane airplane, Taxiway taxiWay) {
 
     }
 
-    public void execute(airplane Airplane, taxiway TaxiWay) {
-
-    }
-
-    public void forward(int speedInMPH) {
-
+    public void forward(int speedInMPH){
+        this.speedInMPH += speedInMPH;
     }
 
     public void backward(int speedInMPH) {
-
+        this.speedInMPH -= speedInMPH;
     }
 
     public void turnLeft(int degree) {
-
+        this.degree -= degree;
     }
 
     public void turnRight(int degree) {
-
+        this.degree += degree;
     }
 
     public void stop() {
@@ -45,30 +45,30 @@ public class PushBackVehicle implements IPushBackVehicle{
     }
 
     public void up() {
-
+        isUp = true;
     }
 
     public void down() {
-
+        isUp = false;
     }
 
     public void setFlashingLightOn() {
-
+        isFlashingLightOn = true;
     }
 
     public void setFlashingLightOff() {
-
+        isFlashingLightOn = false;
     }
 
     public void setSteeringPin() {
-
+        isSteeringPinSet = true;
     }
 
     public void removeSteeringPin() {
-
+        isSteeringPinSet = false;
     }
 
-    public void notifyGroundOperations(pushBackVehicleReceipt PushBackVehicleReceipt) {
+    public void notifyGroundOperations(PushBackVehicleReceipt pushBackVehicleReceipt) {
 
     }
 
