@@ -12,10 +12,16 @@ public class PushBackVehicle implements IPushBackVehicle{
     private boolean isFlashingLightOn;
     private boolean isSteeringPinSet;
 
-    public PushBackVehicle(String uuid, String id, String type) {
+    public PushBackVehicle(String uuid, String id, String type, boolean isAirplaneConnected, int speedInMPH, int degree, boolean isUp, boolean isFlashingLightOn, boolean isSteeringPinSet) {
         this.uuid = uuid;
         this.id = id;
         this.type = type;
+        this.isAirplaneConnected = isAirplaneConnected;
+        this.speedInMPH = speedInMPH;
+        this.degree = degree;
+        this.isUp = isUp;
+        this.isFlashingLightOn = isFlashingLightOn;
+        this.isSteeringPinSet = isSteeringPinSet;
     }
 
     public void connect(Airplane airplane) {
