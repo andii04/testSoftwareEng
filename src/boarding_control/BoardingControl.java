@@ -1,5 +1,7 @@
 package boarding_control;
 
+import pushback_vehicle.ISeatManagement;
+
 public class BoardingControl implements IBoardingControl {
 
     private ReadingDevice readingDevice;
